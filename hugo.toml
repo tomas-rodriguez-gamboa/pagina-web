@@ -1,0 +1,20 @@
+baseURL = "http://localhost:1313/"
+languageCode = "es-es"
+title = "Tomás Rodríguez Gamboa"
+theme = "hugo-goa"
+
+[params]
+    author = "Tomás Rodríguez Gamboa"
+    intro = "Economista | Magíster en Economía"
+    description = "Interesado en Macroeconomía Aplicada al Desarrollo, Shocks y Productividad."
+    avatar = "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=200"
+
+[[menu.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 10
+
+[[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 20
