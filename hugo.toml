@@ -7,7 +7,7 @@ theme = "hugo-goa"
     author = "Tomás Rodríguez Gamboa"
     intro = "Economista "
     description = "Interesado en Macroeconomía Aplicada al Desarrollo, Shocks y Productividad."    #
-    avatar = "images/perfil.jpg"
+    authorimage = "perfil.jpg"
 
 
 [[menu.main]]
