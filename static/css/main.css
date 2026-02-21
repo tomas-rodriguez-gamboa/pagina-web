@@ -179,7 +179,7 @@ h6.meta {
   color: rgb(113 113 122);
 }
 section.meta {
-  margin-top: ;
+  margin-top:20px ;
 }
 .powered {
   font-family: "Roboto", sans-serif;
@@ -196,8 +196,7 @@ section.meta {
 .title {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-
-  rgb(24 24 27);
+  color: rgb(24 24 27); /* <-- Añade la palabra 'color:' y el ';' al final */
 }
 header.title {
   margin-top: 50px;
