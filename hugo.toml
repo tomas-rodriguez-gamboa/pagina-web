@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://tomas-rodriguez-gamboa.github.io/pagina-web/"
 languageCode = "es-es"
 title = "Tomás Rodríguez Gamboa"
 theme = "hugo-goa"
@@ -6,9 +6,14 @@ theme = "hugo-goa"
 [params]
     author = "Tomás Rodríguez Gamboa"
     intro = "Economista "
-    description = "Interesado en Macroeconomía Aplicada al Desarrollo, Shocks y Productividad."    #
+    description = "Research Assistant & MSc Economics student at Universidad Alberto Hurtado (Chile)."    #
     authorimage = "perfil.jpg"
 
+[params.social]
+    github = "tomas-rodriguez-gamboa"
+    linkedin = "tomas-rodriguez-gamboa"
+    email = "TORODRIG@ALUMNOS.UAHURTADO.CL"
+    twitter = "TomasRIG"
 
 [[menu.main]]
     name = "Inicio"
