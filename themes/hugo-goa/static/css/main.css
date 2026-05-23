@@ -127,23 +127,25 @@ h3.intro {
   margin-top: 0px;
 }
 .list {
-  font-family: "Roboto", sans-serif;
-
-  margin-top: 50px;
+  margin-top: 25px;
+}
+.research-subtitle {
+  font-size: 20px;
+  letter-spacing: 0.5px;
 }
 .list li {
   list-style: none;
 }
 .list-entry {
   font-family: "Roboto Slab", serif;
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 400;
 
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 .list-entry-link {
-  padding: 0;
+  color: rgb(24 24 27) !important;
 }
 .main-menu {
   margin-top: 10px;

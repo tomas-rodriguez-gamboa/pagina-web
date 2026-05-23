@@ -1,25 +1,36 @@
-/* ===== MAIN MENU TOP RIGHT ===== */
+/* ===== MAIN MENU TOP RIGHT (MEJORADO) ===== */
 
 #main-menu-pane {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 20px;
+  right: 100px;
 
   display: flex !important;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 30px;
+  gap: 35px; /* Aumentamos un poco el espacio para que respire */
 
   text-align: right;
-}
-
-#main-menu-pane h4 {
-  margin: 0 !important;
+  width: auto;
+  white-space: nowrap;
 }
 
 #main-menu-pane .menu-item {
   display: inline-block;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.4px;
+  /* CAMBIO CLAVE: Subimos a 400 o 500 para que no se pierda la letra */
+  font-weight: 500; 
+  font-size: 16px; /* Bajamos un punto el tamaño pero subimos el grosor: se ve más elegante */
+  letter-spacing: 0.02em; /* Un espaciado más natural que 0.4px */
+  text-transform: capitalize; /* Asegura que la primera letra sea mayúscula */
+  transition: all 0.2s ease-in-out;
+}
+
+#main-menu-pane .menu-item a {
+  color: #18181b; /* Un tono casi negro muy sólido */
+}
+
+#main-menu-pane .menu-item a:hover {
+  color: #991b1b; /* El rojo que ya usas en otras partes para coherencia */
+  border-bottom: 2px solid #991b1b; /* Una línea sutil al pasar el mouse */
 }
