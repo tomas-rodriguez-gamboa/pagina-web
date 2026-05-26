@@ -64,7 +64,7 @@ div.content {
 }
 
 .content a {
-  color: rgb(153 27 27);
+  color: rgb(4, 6, 110);
 }
 
 /* ================================================= */
@@ -130,24 +130,39 @@ header.title a {
 /* LISTS */
 /* ================================================= */
 
+.list h1 {
+  font-size: 50px;
+}
+.research-subtitle {
+  font-size: 30px;
+}
 .list {
   font-family: "Roboto", sans-serif;
-  margin-top: 50px;
+  margin-top: 30px;
 }
+.list-entry .meta {
+  color: rgb(8, 8, 8);
+}
+.list-entry .meta a {
+  color: rgb(15, 8, 110);
 
+}
 .list li {
   list-style: none;
 }
 
 .list-entry {
   font-family: "Roboto Slab", serif;
-  font-size: 25px;
+  font-size: 10px;
   font-weight: 400;
   margin: 10px 0 20px;
 }
 
 .list-entry-link {
   padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(24 24 27);
 }
 
 /* ================================================= */
@@ -173,7 +188,7 @@ header.title a {
 }
 
 a.meta {
-  color: rgb(153 27 27);
+  color: rgb(2, 4, 95);
 }
 
 h6.meta {
@@ -240,7 +255,7 @@ section.meta {
   white-space: nowrap;
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  color: rgb(153 27 27);
+  color: rgb(18, 4, 95);
 }
 
 /* ================================================= */

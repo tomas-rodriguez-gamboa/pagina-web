@@ -25,3 +25,8 @@ theme = "hugo-goa"
     name = "Research"
     url = "/posts/"
     weight = 20
+
+ [[menu.main]]
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 30

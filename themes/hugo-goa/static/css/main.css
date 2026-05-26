@@ -138,14 +138,16 @@ h3.intro {
 }
 .list-entry {
   font-family: "Roboto Slab", serif;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 400;
-
   margin-top: 20px;
   margin-bottom: 8px;
 }
-.list-entry-link {
-  color: rgb(24 24 27) !important;
+li.list-entry a.list-entry-link {
+  font-size: 10px !important;
+  font-weight: 400;
+  color: rgb(24 24 27);
+  padding: 0;
 }
 .main-menu {
   margin-top: 10px;
@@ -197,8 +199,7 @@ section.meta {
 .title {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-
-  rgb(24 24 27);
+  color: rgb(24 24 27);
 }
 header.title {
   margin-top: 50px;
@@ -211,7 +212,6 @@ header.title {
   }
   .list {
     font-family: "Roboto", sans-serif;
-
     margin-top: 30px;
   }
 }
