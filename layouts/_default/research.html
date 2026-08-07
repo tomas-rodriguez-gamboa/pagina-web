@@ -1,0 +1,61 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <section id="list-pane" class="list">
+
+    <h1 style="text-align: center;">Research</h1>
+    <div style="margin-bottom: 2.5rem; margin-top: 4rem;">
+
+      <p style="font-size: 16px; font-weight: 500; color: #555; margin: 0 0 0.5rem 1.25rem;">Working Papers</p>
+      <ul style="list-style: none; margin: 0 0 1.5rem; padding: 0; border-left: 2px solid #1a4a7a;">
+        {{ range where site.Pages "Params.sectiontype" "working" }}
+        <li style="padding: 0.5rem 0 0.5rem 1.25rem;">
+          <a class="list-entry-link" href="{{ .RelPermalink }}" style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</a>
+          {{ with .Params.coauthors }}
+          <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">
+            (Joint with
+            {{ range $i, $a := . }}
+              {{ if $i }},{{ end }}
+              <a href="{{ $a.url }}" style="color: #1a4a7a;">{{ $a.name }}</a>
+            {{ end }})
+          </span>
+          {{ end }}
+          {{ with .Params.ssrn }}
+          <a href="{{ . }}" style="font-size: 15px; color: #1a4a7a; margin-left: 0.5rem;" target="_blank">SSRN</a>
+          {{ end }}
+          {{ with .Description }}
+          <p style="font-size: 13px; color: #555; margin: 0.25rem 0 0;">{{ . }}</p>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+
+      <p style="font-size: 16px; font-weight: 500; color: #555; margin: 0 0 0.5rem 1.25rem;">Work in Progress</p>
+      <ul style="list-style: none; margin: 0; padding: 0; border-left: 2px solid #1a4a7a;">
+        {{ range where site.Pages "Params.sectiontype" "wip" }}
+        <li style="padding: 0.5rem 0 0.5rem 1.25rem;">
+          <a class="list-entry-link" href="{{ .RelPermalink }}" style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</a>
+          {{ with .Params.coauthors }}
+          <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">
+            (Joint with
+            {{ range $i, $a := . }}
+              {{ if $i }},{{ end }}
+              <a href="{{ $a.url }}" style="color: #1a4a7a;">{{ $a.name }}</a>
+            {{ end }})
+          </span>
+          {{ end }}
+          {{ with .Params.pdf }}
+          <a href="{{ . }}" style="font-size: 15px; color: #1a4a7a; margin-left: 0.5rem;" target="_blank">PDF</a>
+          {{ end }}
+          {{ with .Description }}
+          <p style="font-size: 13px; color: #555; margin: 0.25rem 0 0;">{{ . }}</p>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </section>
+</div>
+
+{{ partial "menu.html" . }}
