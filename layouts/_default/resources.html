@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <section id="list-pane" class="list">
+
+    <h1 style="text-align: center;">Resources</h1>
+    <div style="margin-bottom: 2.5rem; margin-top: 4rem;">
+
+      <ul style="list-style: none; margin: 0; padding: 0; border-left: 2px solid #1a4a7a;">
+        {{ range where site.Pages "Params.sectiontype" "resources" }}
+        <li style="padding: 0.5rem 0 0.5rem 1.25rem;">
+          <a class="list-entry-link" href="{{ .RelPermalink }}" style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</a>
+          {{ with .Params.coauthors }}
+          <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">
+            (Joint with
+            {{ range $i, $a := . }}
+              {{ if $i }},{{ end }}
+              <a href="{{ $a.url }}" style="color: #1a4a7a;">{{ $a.name }}</a>
+            {{ end }})
+          </span>
+          {{ end }}
+          {{ with .Params.pdf }}
+          <a href="{{ . }}" style="font-size: 15px; color: #1a4a7a; margin-left: 0.5rem;" target="_blank">PDF</a>
+          {{ end }}
+          {{ if .Description }}
+          <p style="font-size: 13px; color: #555; margin: 0.25rem 0 0;">{{ .Description }}</p>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </section>
+</div>
+
+{{ partial "menu.html" . }}

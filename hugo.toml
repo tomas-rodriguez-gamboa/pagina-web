@@ -7,7 +7,7 @@ theme = "hugo-goa"
 [params]
     author = "Tomás Rodríguez Gamboa"
     intro = "Economist"
-   description = "Research Assistant & MSc Economics Candidate at Universidad Alberto Hurtado (Chile)."    #
+   description ="Research Assistant & MSc Economics Candidate at Universidad Alberto Hurtado (Chile)."    #
     authorimage = "perfil.jpg"
 
 [params.social]
@@ -17,16 +17,26 @@ theme = "hugo-goa"
     twitter = "TomasRIG"
 
 [[menu.main]]
-    name = "CV"
-    url = "https://tomas-rodriguez-gamboa.github.io/pagina-web/CV_web.pdf"
-    weight = 10
-    
-[[menu.main]]
     name = "Research"
     url = "/posts/"
-    weight = 20
+    weight = 10
 
- [[menu.main]]
+[[menu.main]]
     name = "Teaching"
     url = "/teaching/"
+    weight = 20
+
+[[menu.main]]
+    name = "Resources"
+    url = "/resources/"
     weight = 30
+
+[[menu.main]]
+    name = "CV"
+    url = "https://tomas-rodriguez-gamboa.github.io/pagina-web/CV_web.pdf"
+    weight = 40
+
+[[menu.main]]
+    name = "Beyond Economics"
+    url = "/beyond-economics/"
+    weight = 50
