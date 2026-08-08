@@ -18,7 +18,7 @@ theme = "hugo-goa"
 
 [[menu.main]]
     name = "CV"
-    url = "/"
+    url = "/pagina-web/CV_web.pdf"
     weight = 10
 
 [[menu.main]]
