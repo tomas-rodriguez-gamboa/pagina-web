@@ -1,0 +1,39 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <section id="list-pane" class="list">
+
+    <h1 style="text-align: center;">Outreach</h1>
+    <div style="margin-bottom: 2.5rem; margin-top: 4rem;">
+
+      <p style="font-size: 16px; font-weight: 500; color: #555; margin: 0 0 0.5rem 1.25rem;">Seminars</p>
+      <ul style="list-style: none; margin: 0 0 1.5rem; padding: 0; border-left: 2px solid #1a4a7a;">
+        {{ range where site.Pages "Params.sectiontype" "seminar" }}
+        <li style="padding: 0.5rem 0 0.5rem 1.25rem;">
+          <span style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</span>
+          <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">— {{ .Params.place }}</span>
+          <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">{{ .Date.Format "January 2006" }}</span>
+        </li>
+        {{ end }}
+      </ul>
+
+      <p style="font-size: 16px; font-weight: 500; color: #555; margin: 0 0 0.5rem 1.25rem;">Public Dissemination</p>
+      <ul style="list-style: none; margin: 0; padding: 0; border-left: 2px solid #1a4a7a;">
+        {{ range where site.Pages "Params.sectiontype" "policy" }}
+        <li style="padding: 0.5rem 0 0.5rem 1.25rem;">
+          <span style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</span>
+          {{ with .Params.pdf }}
+          <a href="{{ . }}" style="font-size: 15px; color: #1a4a7a; margin-left: 0.5rem;" target="_blank">PDF</a>
+          {{ end }}
+          {{ if .Description }}
+          <p style="font-size: 13px; color: #555; margin: 0.25rem 0 0;">{{ .Description }}</p>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </section>
+</div>
+
+{{ partial "menu.html" . }}
