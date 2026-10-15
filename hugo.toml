@@ -38,9 +38,9 @@ theme = "hugo-goa"
 
 [[menu.main]]
     name = "CV"
-    url = "https://tomas-rodriguez-gamboa.github.io/pagina-web/CV_web.pdf"
+    url = "/cv/"
     weight = 40
-
+    
 [[menu.main]]
     name = "Beyond Economics"
     url = "/beyond-economics/"

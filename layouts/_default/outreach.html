@@ -21,7 +21,7 @@
       <ul style="list-style: none; margin: 0; padding: 0; border-left: 2px solid #1a4a7a;">
         {{ range where site.Pages "Params.sectiontype" "policy" }}
         <li style="padding: 0.5rem 0 0.5rem 1.25rem;">
-          <span style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</span>
+          <a class="list-entry-link" href="{{ .RelPermalink }}" style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</a>
           {{ with .Params.pdf }}
           <a href="{{ . }}" style="font-size: 15px; color: #1a4a7a; margin-left: 0.5rem;" target="_blank">PDF</a>
           {{ end }}

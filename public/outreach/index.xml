@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tomás Rodríguez Gamboa</title>
+    <title>Outreach on Tomás Rodríguez Gamboa</title>
     <link>http://localhost:1313/pagina-web/outreach/</link>
-    <description>Recent content on Tomás Rodríguez Gamboa</description>
+    <description>Recent content in Outreach on Tomás Rodríguez Gamboa</description>
     <generator>Hugo</generator>
     <language>es-es</language>
     <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
@@ -20,7 +20,7 @@
       <link>http://localhost:1313/pagina-web/outreach/policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pagina-web/outreach/policy/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;em&gt;(In Spanish)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Este policy paper desarrolla una lectura analítica de las discusiones sostenidas en las Jornadas de Economía 2025 de la Universidad Alberto Hurtado en torno a pobreza, desigualdad y situación de calle, entendidas no como problemáticas disociadas sino como expresiones articuladas de una misma estructura de producción y reproducción de la vulnerabilidad social. El texto se sitúa en una perspectiva que concibe la pobreza no únicamente como insuficiencia de ingresos, sino como un régimen de regulación que define umbrales socialmente aceptables de vida, distribuye reconocimiento institucional y delimita las fronteras de pertenencia al orden social protegido. En este marco, la desigualdad aparece como arquitectura persistente que organiza jerarquías materiales, simbólicas y territoriales, mientras la situación de calle emerge como la forma extrema en que se manifiesta el colapso de los dispositivos de integración social.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
