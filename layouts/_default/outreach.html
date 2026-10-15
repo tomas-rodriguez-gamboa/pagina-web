@@ -12,7 +12,12 @@
         <li style="padding: 0.5rem 0 0.5rem 1.25rem;">
           <span style="font-size: 18px; color: #1a4a7a;">{{ .Title }}</span>
           <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">— {{ .Params.place }}</span>
+
+          {{ if eq .Params.status "Upcoming" }}
+          <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">(<i>Upcoming</i>)</span>
+          {{ else }}
           <span style="font-size: 15px; color: #555; margin-left: 0.5rem;">{{ .Date.Format "January 2006" }}</span>
+          {{ end }}
         </li>
         {{ end }}
       </ul>
