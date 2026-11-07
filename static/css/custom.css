@@ -1,36 +1,21 @@
-/* ===== MAIN MENU TOP RIGHT (MEJORADO) ===== */
+/* ===== MENÚ EN CELULAR ===== */
+@media (max-width: 768px) {
+  #main-menu-pane {
+    position: static;         /* deja de estar anclado arriba a la derecha */
+    flex-wrap: wrap;          /* si no caben, bajan a otra línea */
+    justify-content: center;
+    gap: 10px 22px;           /* 10px entre líneas, 22px entre links */
+    white-space: normal;
+    margin: 20px auto 10px;
+    padding: 0 15px;
+  }
 
-#main-menu-pane {
-  position: absolute;
-  top: 20px;
-  right: 100px;
+  #main-menu-pane h4 {
+    margin: 0;
+    white-space: nowrap;      /* "Beyond Economics" no se parte en dos */
+  }
 
-  display: flex !important;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 35px; /* Aumentamos un poco el espacio para que respire */
-
-  text-align: right;
-  width: auto;
-  white-space: nowrap;
-}
-
-#main-menu-pane .menu-item {
-  display: inline-block;
-  /* CAMBIO CLAVE: Subimos a 400 o 500 para que no se pierda la letra */
-  font-weight: 500; 
-  font-size: 16px; /* Bajamos un punto el tamaño pero subimos el grosor: se ve más elegante */
-  letter-spacing: 0.02em; /* Un espaciado más natural que 0.4px */
-  text-transform: capitalize; /* Asegura que la primera letra sea mayúscula */
-  transition: all 0.2s ease-in-out;
-}
-
-#main-menu-pane .menu-item a {
-  color: #18181b; /* Un tono casi negro muy sólido */
-}
-
-#main-menu-pane .menu-item a:hover {
-  color: #991b1b; /* El rojo que ya usas en otras partes para coherencia */
-  border-bottom: 2px solid #991b1b; /* Una línea sutil al pasar el mouse */
+  #main-menu-pane .menu-item {
+    font-size: 15px;
+  }
 }
