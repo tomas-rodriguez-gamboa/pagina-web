@@ -1,10 +1,47 @@
-/* ===== MENÚ EN CELULAR ===== */
+/* ===== MAIN MENU TOP RIGHT (ESCRITORIO) ===== */
+
+#main-menu-pane {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+
+  text-align: right;
+  width: auto;
+  white-space: nowrap;
+}
+
+#main-menu-pane .menu-item {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+}
+
+#main-menu-pane a.menu-item {
+  color: #18181b;
+  border-bottom: 2px solid transparent; /* reserva el espacio del subrayado */
+}
+
+#main-menu-pane a.menu-item:hover {
+  color: #991b1b;
+  border-bottom: 2px solid #991b1b;
+}
+
+/* ===== MENU EN CELULAR ===== */
 @media (max-width: 768px) {
   #main-menu-pane {
     position: static;         /* deja de estar anclado arriba a la derecha */
-    flex-wrap: wrap;          /* si no caben, bajan a otra línea */
+    flex-wrap: wrap;          /* si no caben, bajan a otra linea */
     justify-content: center;
-    gap: 10px 22px;           /* 10px entre líneas, 22px entre links */
+    gap: 10px 22px;           /* 10px entre lineas, 22px entre links */
     white-space: normal;
     margin: 20px auto 10px;
     padding: 0 15px;
